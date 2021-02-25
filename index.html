@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tour</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<!-- Modals -->
+<div class="modal">      
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <div class="modal_contact">
+        <h3>Заполните форму и мы свяжемся с вами</h3>
+        <div class="form">
+            <form action="#" class="form-inline contactform_select">
+            <div class="input-group">
+                <div class="input-group-addon"><i class="fa fa-user " aria-hidden="true"></i>
+                </div>
+                <input class="contactform_name form-control" type="text" placeholder="Ваше имя" required minlength="2" name="name">
+            </div>            
+            <div class="input-group">
+                <div class="input-group-addon contactform_phone"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                <input class="contactform_phone form-control" type="text" placeholder="Телефон" required name="phone">
+            </div>            
+            <div class="input-group">
+                <div class="input-group-addon contactform_mail"><i class="fa fa-envelope" aria-hidden="true" ></i>
+                </div>
+                <input class="contactform_mail form-control" type="email" placeholder="E-mail"  required name="mail">
+            </div>
+            <textarea cols="30" rows="3" placeholder="Сообщение" name="message"></textarea>
+            <div class="police center-block">
+                <div class="center-block text-center">
+                    <input class="checkbox" type="checkbox" required>
+                    <p class="text-center">Я согласен с политикой конфидециальности</p>
+                </div>
+            </div>
+            <button type="submit">отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="thanks">
+  <p>Спасибо за обращение!<br>Мы свяжемся с Вами в скором времени.</p>
+  <button class="back">Вернуться на сайт</button>
+</div>
+<div class="overlay">
+</div>
+    <!-- content --> 
+    <div class="main">
+
+      <div class="container">
+        <a id="up"></a>
+        <div class="row">
+          <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-1 main_logo ">
+            <img src="icons/main-logo.png" alt="logo">
+          </div>
+          <div class="col-sm-7 main_nav">
+            <nav>
+              <ul>
+                <li><a href="#about">методология</a></li>
+                <li><a href="#sheldure">расписания туров</a></li>
+                <li><a href="#include">что входит</a></li>
+                <li><a href="#hotels">отели</a></li>
+                <li><a href="#personal">тренера</a></li>
+                <li><a href="#steps">этапы</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-sm-3 col-sm-offset-0 col-xs-5 col-xs-offset-2 main_tel text-center">
+            <p class="main_tel_phone"><span>+7 (495) 539-24-42</span></p>
+            <p class="main_tel_title">Звонок по России бесплатно</p>
+          </div>
+        </div>
+        <h1 class="main_title text-center">Мы знаем как правильно отдохнуть душой и телом</h1>
+        <img src="icons/wawe.png" class="main_wawe center-block" alt="wawe">
+        <h2 class="text-center wow pulse" data-wow-duration="2s" data-wow-iteration="2">Все включено</h2>
+        <div class="row">
+          <div class="col-sm-offset-3 col-sm-3">
+            <a href="#tour">
+              <div id="choose" class="main_btna text-center">выбрать тур</div>
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <div id="receive" class="main_btn text-center contact" ><span>получить</span> консультацию</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
